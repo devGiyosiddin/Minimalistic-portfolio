@@ -1,3 +1,87 @@
+/* CUSTOM-PROPS */
+:root {
+
+  /* fonts */
+  --text-font: "Public Sans", "Arial", sans-serif;
+  --karla-font: "Karla", "Arial", sans-serif;
+  --ibarra-font: "Ibarra Real Nova", "Arial", sans-serif;
+
+  /* colors */
+  --cyan: #5fb4a2;
+  --dark-blue: #203a4c;
+  --grayish-dark-blue: #33323d;
+  --very-light-grey: #fafafa;
+  --light-grey: #eaeaeb;
+  --red-error: #f43030;
+}
+
+
+/* FONT-FACE */
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
+      url("../fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("../fonts/Karla-Bold.woff2") format("woff2"),
+      url("../fonts/Karla-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"),
+      url("../fonts/IbarraRealNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-SemiBold.woff2") format("woff2"),
+      url("../fonts/PublicSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Regular.woff2") format("woff2"),
+      url("../fonts/IbarraRealNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Bold.woff2") format("woff2"),
+      url("../fonts/PublicSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-BoldItalic.woff2") format("woff2"),
+      url("../fonts/PublicSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
 /* GLOBAL STYLES */
 html {
   box-sizing: border-box;
@@ -12,7 +96,7 @@ html {
 }
 
 *:focus {
-  outline: 3px dashed blue;
+  outline: 3px dashed rgb(195, 210, 82);
   outline-offset: 3px;
 }
 
@@ -20,11 +104,12 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "", "Arial", sans-serif;
-  font-size: ;
-  font-weight: ;
-  line-height: 1.5;
-  color: #222;
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--grayish-dark-blue);
   padding: 0;
   margin: 0;
   background-color: #fff;
@@ -45,12 +130,18 @@ img {
   width: 1px;
 }
 
+/* BUTTONS */
+.button {
+  text-decoration: none;
+
+}
+
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1110px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
