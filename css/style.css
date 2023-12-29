@@ -132,9 +132,55 @@ img {
 }
 
 /* BUTTONS */
-.button {
+.cta-button {
+  display: inline-block;
+  min-width: 200px;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
-  
+  cursor: pointer;
+  border: 0;
+  background-color: var(--dark-blue);
+}
+.cta-button:hover {
+  background-color: var(--cyan);
+}
+.cta-button:active {
+  opacity: 0.6;
+}
+.cta-button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.cta-button:hover .cta-button__append svg {
+  color: #fff;
+}
+
+.cta-button__inner {
+  display: flex;
+}
+
+.cta-button__append {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--cyan);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cta-button__text {
+  text-align: center;
+  flex-grow: 1;
+  padding: 17px 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* CONTAINER */
