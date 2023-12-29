@@ -132,6 +132,33 @@ img {
 }
 
 /* BUTTONS */
+.button {
+  padding: 17px 34px 17px 32px;
+  color: var(--grayish-dark-blue);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid var(--grayish-dark-blue);
+  background-color: transparent;
+  transition: 0.1s;
+}
+.button:hover {
+  color: #fff;
+  background-color: var(--grayish-dark-blue);
+}
+.button:active {
+  opacity: 0.6;
+}
+.button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+
+
 .cta-button {
   display: inline-block;
   min-width: 200px;
@@ -141,6 +168,7 @@ img {
   cursor: pointer;
   border: 0;
   background-color: var(--dark-blue);
+  transition: 0.1s;
 }
 .cta-button:hover {
   background-color: var(--cyan);
