@@ -10,7 +10,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a href="index.html" class="site-header__logo-link">
+        <img src="img/site-logo-dark.svg" alt="site logo icon" class="site-header__logo-icon" width="60" height="32">
+      </a>
+      <nav class="sitenav menu-sitenav">
+          <ul class="sitenav__list">
+              <li class="sitenav__item sitenav__item--active">
+                <a class="sitenav__link" href="#">Home</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Portfolio</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Contact me</a>
+              </li>
+          </ul>
+      </nav>
+
+      <!-- Menu-open -->
+      <button class="menu-opener__button" type="button"></button>
+    </div>
+  </header>
   <script src="js/main.js"></script>
 </body>
 </html>

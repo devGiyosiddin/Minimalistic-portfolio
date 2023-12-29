@@ -1,13 +1,14 @@
 /* CUSTOM-PROPS */
 :root {
-
+  
   /* fonts */
   --text-font: "Public Sans", "Arial", sans-serif;
   --karla-font: "Karla", "Arial", sans-serif;
   --ibarra-font: "Ibarra Real Nova", "Arial", sans-serif;
-
+  
   /* colors */
   --cyan: #5fb4a2;
+  --cyan--50: rgba(95, 180, 162, 0.5);
   --dark-blue: #203a4c;
   --grayish-dark-blue: #33323d;
   --very-light-grey: #fafafa;
@@ -20,7 +21,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
-      url("../fonts/PublicSans-Regular.woff") format("woff");
+  url("../fonts/PublicSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,7 +30,7 @@
 @font-face {
   font-family: "Karla";
   src: url("../fonts/Karla-Bold.woff2") format("woff2"),
-      url("../fonts/Karla-Bold.woff") format("woff");
+  url("../fonts/Karla-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -38,7 +39,7 @@
 @font-face {
   font-family: "Ibarra Real Nova";
   src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"),
-      url("../fonts/IbarraRealNova-Bold.woff") format("woff");
+  url("../fonts/IbarraRealNova-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -47,7 +48,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-SemiBold.woff2") format("woff2"),
-      url("../fonts/PublicSans-SemiBold.woff") format("woff");
+  url("../fonts/PublicSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -56,7 +57,7 @@
 @font-face {
   font-family: "Ibarra Real Nova";
   src: url("../fonts/IbarraRealNova-Regular.woff2") format("woff2"),
-      url("../fonts/IbarraRealNova-Regular.woff") format("woff");
+  url("../fonts/IbarraRealNova-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -65,7 +66,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Bold.woff2") format("woff2"),
-      url("../fonts/PublicSans-Bold.woff") format("woff");
+  url("../fonts/PublicSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -74,7 +75,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-BoldItalic.woff2") format("woff2"),
-      url("../fonts/PublicSans-BoldItalic.woff") format("woff");
+  url("../fonts/PublicSans-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -133,7 +134,7 @@ img {
 /* BUTTONS */
 .button {
   text-decoration: none;
-
+  
 }
 
 /* CONTAINER */
@@ -145,6 +146,104 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Site - LOGO */
+.site-header__logo-link {
+  margin-right: 32px;
+}
+
+.site-header__logo-icon {
+  display: block;
+}
+
+
+/* MENU */
+.menu-opener__button {
+  display: block;
+  width: 24px;
+  height: 13px;
+  margin-left: auto;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/Menu-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.site-header__menu--open .menu-opener__button {
+  width: 18px;
+  height: 19px;
+  background-image: url("../img/Close-icon.svg");
+}
+
+.menu-icon {
+  display: block;
+}
+
+.site-header__menu--open .menu-sitenav {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  padding: 40px;
+  top: 88px;
+  right: 32px;
+  min-width: 223px;
+  max-width: calc(100% - 64px);
+  background-color: var(--grayish-dark-blue);
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  position: relative;
+  z-index: 1;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  transition: 0.3s;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav {
+  display: none;
+  margin-left: auto;
+}
+
+.sitenav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav__item:hover .sitenav__link{
+  color: var(--cyan--50);
+}
+
+.sitenav__item--active .sitenav__link {
+  color: var(--cyan);
+}
+
+.sitenav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.sitenav__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+
 
 /* MAIN-CONTENT */
 .main-content{
@@ -160,3 +259,32 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {}
+
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  .site-header {
+    padding: 64px 0 47px;
+  }
+  .menu-opener__button {
+  display: none;
+  }
+  .sitenav,
+  .site-header__menu--open .sitenav {
+    position: static;
+    display: block;
+    background-color: transparent;
+  }
+  .sitenav__list {
+    flex-direction: row;
+  }
+  .sitenav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
+  .sitenav__link {
+    color: var(--grayish-dark-blue);
+  }
+}
