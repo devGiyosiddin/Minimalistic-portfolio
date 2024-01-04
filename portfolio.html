@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalistic portfolio List</title>
+  
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a href="index.html" class="site-header__logo-link">
+        <img src="img/site-logo-dark.svg" alt="site logo icon" class="site-header__logo-icon" width="60" height="32">
+      </a>
+      <nav class="sitenav menu-sitenav">
+          <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="index.html">Home</a>
+              </li>
+              <li class="sitenav__item sitenav__item--active">
+                <a class="sitenav__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Contact me</a>
+              </li>
+          </ul>
+      </nav>
+
+      <!-- Menu-open -->
+      <button class="menu-opener__button" type="button"></button>
+    </div>
+  </header>
+
+  <!-- <button class="button" type="button" disabled>Contact me</button> -->
+  <main class="main-content">
+    <h2 class="visually-hidden">Portfolio list</h2>
+    <div class="container">
+      <div class="img-text-info">
+        <picture class="img-text-info__picture">
+          <source srcset="img/manage-preview-desktop.jpg 1x, img/manage-preview-desktop@2x.jpg 2x" media="(min-width:1180px)">
+          <img src="img/manage-preview.jpg" alt="Preview of Manage project" class="img-text-info__img" srcset="img/manage-preview.jpg 1x, img/manage-preview@2x.jpg 2x">
+        </picture>
+        <div class="img-text-info__info">
+          <h3 class="img-text-info__title">Manage</h3>
+          <p class="img-text-info__description">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+          <a href="manage.html" class="button">View project</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__container container">
+      <a href="index.html" class="site-footer__logo-link">
+        <img src="img/site-logo-white.svg" alt="site logo icon" class="site-header__logo-icon" width="60" height="32">
+      </a>
+      <nav class="site-footer__sitenav">
+          <ul class="sitenav__list">
+              <li class="sitenav__item sitenav__item--active">
+                <a class="sitenav__link" href="#">Home</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Portfolio</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Contact me</a>
+              </li>
+          </ul>
+      </nav>
+      <ul class="site-footer__socials">
+        <li class="site-footer__social-item">
+          <a href="#" aria-label="Github profile" class="site-footer__social-link">
+            <img src="img/Github-icon.png" alt="Github icon" class="site-footer__item-img" width="24" height="24" srcset="img/Github-icon.png 1x, img/Github-icon@2x.png 2x">
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a href="#" aria-label="Twitter profile" class="site-footer__social-link" >
+            <img src="img/Twitter-icon.png" alt="Twitter icon" class="site-footer__item-img" width="24" height="24" srcset="img/Twitter-icon.png 1x, img/Twitter-icon@2x.png 2x">
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a href="#" aria-label="Linkedin profile" class="site-footer__social-link" >
+            <img src="img/Linledom-icon.png" alt="Linkedin icon" class="site-footer__item-img" width="24" height="24" srcset="img/Linledom-icon.png 1x, img/Linledom-icon@2x.png 2x">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
