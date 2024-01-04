@@ -594,7 +594,7 @@ only screen and (min-resolution: 2dppx) {}
 
 @media only screen and (min-width: 1180px) {
   .site-header {
-    padding-bottom: 5px;
+    padding-bottom: 54px;
   }
   .img-text-info {
     align-items: stretch;
