@@ -605,7 +605,7 @@ img {
 
 /* CONTACT-PAGE */
 .contact-info {
-  margin-bottom: 80px;
+  margin-bottom: 32px;
   padding: 24px 0 32px;
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
@@ -645,6 +645,81 @@ img {
   width: 24px;
   height: 24px;
 }
+
+
+/* CONTACT-FORMS */
+.contact-forms {
+  margin-bottom: 80px;
+}
+
+.contact-form__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--grayish-dark-blue);
+  font-family: var(--ibarra-font);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  color: var(--grayish-dark-blue);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 24px;
+  padding: 9px 0 9px 16px;
+  border: 0;
+  background-color: rgba(51, 50, 61, 0.15);
+}
+
+.contact-form__name-label {
+}
+
+.contact-form__name-input {
+}
+
+.contact-form__email-label {
+}
+
+.contact-form__email-input {
+}
+
+.contact-form__textarea-label {
+}
+
+.contact-form__message-textarea {
+  width: 100%;
+  min-height: 96px;
+  resize: vertical;
+}
+
+/* PLACEHOLDER-STYLES */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: var(--grayish-dark-blue);
+  opacity: 0.4;
+}
+
+.contact-form__button {
+  width: 200px;
+  height: 48px;
+  padding: 17px 24px;
+  color: #fff;
+}
+
 
 
 /* SITE-FOOTER */
@@ -754,7 +829,7 @@ only screen and (min-resolution: 2dppx) {}
   }
   .page-control__right-info {
     margin-right: 32px;
-  };
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -873,7 +948,7 @@ only screen and (min-resolution: 2dppx) {}
     padding: 32px 0;
   }
   .contact-info {
-    margin-bottom: 96px;
+    padding-top: 32px;
   }
   .contact-info__heading {
     width: 251px;
@@ -947,7 +1022,8 @@ only screen and (min-resolution: 2dppx) {}
     max-width: 635px;
   }
   .contact-info {
-    margin-bottom: 109px;
+    padding: 48px 0;
+    margin-bottom: 48px;
   }
   .contact-info__heading {
     margin-bottom: 0;
@@ -962,6 +1038,18 @@ only screen and (min-resolution: 2dppx) {}
   .contact-info__description {
     width: 635px;
     font-size: 16px;
+  }
+  .contact-forms {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-form__title {
+    width: 350px;
+    margin-right: 125px;
+    margin-bottom: 0;
+  }
+  .contact-form {
+    width: 635px;
   }
 }
 
