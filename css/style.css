@@ -106,10 +106,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--text-font);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 187.5%;
   color: var(--grayish-dark-blue);
   padding: 0;
   margin: 0;
@@ -137,10 +137,10 @@ img {
   padding: 17px 34px 17px 32px;
   color: var(--grayish-dark-blue);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -163,7 +163,7 @@ img {
 
 .cta-button {
   display: inline-block;
-  min-width: 200px;
+  min-width: 12.5rem;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -206,10 +206,10 @@ img {
   flex-grow: 1;
   padding: 17px 0;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
 }
 
@@ -251,25 +251,25 @@ img {
   margin-top: 0;
   margin-bottom: 24px;
   font-family: var(--ibarra-font);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
 }
 
 .img-text-info__description {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 187.5%;
 }
 
 
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1110px;
+  max-width: 73.75rem;
   padding-left: 32px;
   padding-right: 32px;
   margin-left: auto;
@@ -315,7 +315,7 @@ img {
   padding: 40px;
   top: 88px;
   right: 32px;
-  min-width: 223px;
+  min-width: 13.938rem;
   max-width: calc(100% - 64px);
   background-color: var(--grayish-dark-blue);
 }
@@ -365,9 +365,9 @@ img {
   display: block;
   color: #fff;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: normal;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
   transition: 0.2s;
 }
@@ -402,10 +402,10 @@ img {
   margin-top: 0;
   margin-bottom: 32px;
   font-family: var(--ibarra-font);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
 }
 
 /* CONTACT-CTA */
@@ -427,10 +427,10 @@ img {
   margin-top: 0;
   margin-bottom: 40px;
   font-family: var(--ibarra-font);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 42px; /* 105% */
-  letter-spacing: -0.357px;
+  line-height: 105%; /* 105% */
+  letter-spacing: -0.02231rem;
 }
 
 
@@ -472,17 +472,17 @@ img {
   margin-top: 0;
   margin-bottom: 24px;
   font-family: var(--ibarra-font);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
 }
 
 .temp-info__heading-text {
   max-width: 339px;
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 15px;
+  font-size: 0.938rem;
 }
 
 .temp-info__heading-links {
@@ -490,7 +490,7 @@ img {
   margin-bottom: 24px;
   text-decoration: none;
   color: var(--cyan);
-  font-size: 13px;
+  font-size: 0.813rem;
   font-weight: 700;
 }
 
@@ -502,21 +502,21 @@ img {
   margin-top: 0;
   margin-bottom: 28px;
   font-family: var(--ibarra-font);
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 2rem;
+  line-height: 105%;
   letter-spacing: -0.286px;
 }
 .temp-info__details-text {
   margin-top: 0;
   margin-bottom: 40px;
-  font-size: 15px;
+  font-size: 0.938rem;
 }
 .temp-info__details-bottom-text {
   margin-top: 0;
   margin-bottom: 40px;
   font-family: var(--ibarra-font);
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 2rem;
+  line-height: 105%;
   letter-spacing: -0.286px;
 }
 .temp-info__details-images {
@@ -593,7 +593,7 @@ img {
   margin: 0;
   color: var(--grayish-dark-blue);
   font-family: var(--ibarra-font);
-  font-size: 32px;
+  font-size: 2rem;
   letter-spacing: -0.286px;
 }
 .page-control__left-text {
@@ -614,11 +614,11 @@ img {
   margin-top: 0;
   margin-bottom: 24px;
   font-family: var(--ibarra-font);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
 }
 .contact-info__wrapper {
 
@@ -626,7 +626,7 @@ img {
 .contact-info__description {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 15px;
+  font-size: 0.938rem;
 }
 .contact-info__socials {
   display: flex;
@@ -657,10 +657,10 @@ img {
   margin-bottom: 24px;
   color: var(--grayish-dark-blue);
   font-family: var(--ibarra-font);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
 }
 
 .contact-form {
@@ -671,7 +671,7 @@ img {
 .contact-form label {
   margin-bottom: 8px;
   color: var(--grayish-dark-blue);
-  font-size: 13px;
+  font-size: 0.813rem;
   font-weight: 700;
 }
 
@@ -683,21 +683,6 @@ img {
   background-color: rgba(51, 50, 61, 0.15);
 }
 
-.contact-form__name-label {
-}
-
-.contact-form__name-input {
-}
-
-.contact-form__email-label {
-}
-
-.contact-form__email-input {
-}
-
-.contact-form__textarea-label {
-}
-
 .contact-form__message-textarea {
   width: 100%;
   min-height: 96px;
@@ -705,13 +690,6 @@ img {
 }
 
 /* PLACEHOLDER-STYLES */
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
-  
-}
-
 ::-webkit-input-placeholder {
   color: var(--grayish-dark-blue);
   opacity: 0.4;
@@ -739,7 +717,6 @@ img {
   padding: 17px 24px;
   color: #fff;
 }
-
 
 
 /* SITE-FOOTER */
@@ -786,7 +763,7 @@ only screen and (min-resolution: 2dppx) {}
 
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 31.125rem) {
   .hero__img {
     height: 600px;
   }
@@ -798,7 +775,7 @@ only screen and (min-resolution: 2dppx) {}
   }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 34.375rem) {
   .img-text-info {
     display: flex;
     align-items: center;
@@ -827,7 +804,7 @@ only screen and (min-resolution: 2dppx) {}
   }
 }
 
-@media only screen and (min-width: 635px) {
+@media only screen and (min-width: 39.688rem) {
   .temp-info__heading-text {
     float: right;
   }
@@ -852,7 +829,7 @@ only screen and (min-resolution: 2dppx) {}
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   .container {
     padding: 0 40px;
   }
@@ -991,7 +968,7 @@ only screen and (min-resolution: 2dppx) {}
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 64rem) {
   .hero {
     margin-bottom: 153px;
   }
@@ -1003,8 +980,8 @@ only screen and (min-resolution: 2dppx) {}
   }
   .hero__heading {
     margin-bottom: 53px;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 3.125rem;
+    line-height: 312.5%;
     letter-spacing: -0.446px;
   }
   .img-text-info__index-about .img-text-info__img {
@@ -1057,7 +1034,7 @@ only screen and (min-resolution: 2dppx) {}
   }
   .contact-info__description {
     width: 635px;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .contact-forms {
     display: flex;
@@ -1073,7 +1050,7 @@ only screen and (min-resolution: 2dppx) {}
   }
 }
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 73.75rem) {
   .site-header {
     padding-bottom: 54px;
   }
@@ -1098,8 +1075,8 @@ only screen and (min-resolution: 2dppx) {}
     margin-bottom: 28px;
   }
   .img-text-info__description {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 187.5%;
   }
   .contact-cta {
   padding-top: 150px;
