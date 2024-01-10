@@ -981,8 +981,9 @@ only screen and (min-resolution: 2dppx) {}
   .hero__heading {
     margin-bottom: 53px;
     font-size: 3.125rem;
-    line-height: 312.5%;
-    letter-spacing: -0.446px;
+    line-height: 100%;
+    font-weight: 700;
+    letter-spacing: -0.02788rem;
   }
   .img-text-info__index-about .img-text-info__img {
     width: 540px;
