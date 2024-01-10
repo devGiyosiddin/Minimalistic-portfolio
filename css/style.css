@@ -709,6 +709,26 @@ img {
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
+  
+}
+
+::-webkit-input-placeholder {
+  color: var(--grayish-dark-blue);
+  opacity: 0.4;
+}
+::-moz-placeholder {
+  color: var(--grayish-dark-blue);
+  opacity: 0.4;
+}
+:-ms-input-placeholder {
+  color: var(--grayish-dark-blue);
+  opacity: 0.4;
+}
+:-moz-placeholder {
+  color: var(--grayish-dark-blue);
+  opacity: 0.4;
+}
+::placeholder {
   color: var(--grayish-dark-blue);
   opacity: 0.4;
 }

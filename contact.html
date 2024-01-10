@@ -61,11 +61,11 @@
       </section>
       <section class="contact-forms">
         <h3 class="contact-form__title">Contact Me</h3>
-        <form action="https://echo.htmlacademy.ru" class="contact-form">
-          <label for="name" class="contact-form__name-label">Name</label>
-          <input type="text" id="name" class="contact-form__name-input" placeholder="Jane Appleseed" required>
+        <form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
+          <label for="name" class="contact-form__name-label">Name</label l>
+          <input type="text" name="name" id="name" class="contact-form__name-input" placeholder="Jane Appleseed" required>
           <label for="email" class="contact-form__email-label" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">Email Address</label>
-          <input type="text" id="email" class="contact-form__email-input" placeholder="email@example.com" required>
+          <input type="text" name="email" id="email" class="contact-form__email-input" placeholder="email@example.com" required>
           <label for="textarea" class="contact-form__textarea-label">Message</label>
           <textarea name="textarea" id="textarea" cols="30" rows="10" class="contact-form__message-textarea" placeholder="How can I help?"></textarea>
           <button type="submit" class="contact-form__button cta-button">Send mesaage</button>
