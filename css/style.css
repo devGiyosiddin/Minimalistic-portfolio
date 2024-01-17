@@ -556,7 +556,7 @@ img {
 }
 
 .page-control:hover {
-  background-color: rgba(173, 216, 230, 0.2);
+  background-color: rgba(95, 121, 129, 0.2);
 }
 
 .page-control-left {
@@ -750,6 +750,12 @@ img {
 }
 .site-footer .sitenav__link {
   color: #fff;
+}
+.site-footer .sitenav__item:hover .sitenav__link {
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #7d7575;
 }
 
 
@@ -1086,4 +1092,4 @@ only screen and (min-resolution: 2dppx) {}
   .temp-contact-cta {
     padding-top: 115px;
   }
-}
+} 
