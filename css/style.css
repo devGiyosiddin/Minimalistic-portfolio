@@ -759,7 +759,6 @@ img {
 }
 
 .site-footer .sitenav__item--active .sitenav__link {
-  /* color: var(--cyan); */
   color: rgb(219, 219, 117);
 }
 
