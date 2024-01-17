@@ -758,6 +758,11 @@ img {
   background-color: #7d7575;
 }
 
+.site-footer .sitenav__item--active .sitenav__link {
+  /* color: var(--cyan); */
+  color: rgb(219, 219, 117);
+}
+
 
 /* RETINA */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
