@@ -213,6 +213,24 @@ img {
   text-transform: uppercase;
 }
 
+@media (hover: hover) {
+    .button:hover {
+      color: #fff;
+      background-color: var(--grayish-dark-blue);
+    }
+    .cta-button:hover {
+      background-color: var(--cyan);
+    }
+} 
+@media (hover: none) {
+    .button:active {
+      opacity: 0.6;
+    }
+    .cta-button:active {
+      opacity: 0.6;
+    }
+}
+
 /* IMG-TEXT-INFO */
 .img-text-info__list {
   list-style: none;
